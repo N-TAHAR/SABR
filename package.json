@@ -1,0 +1,23 @@
+{
+  "name": "sabr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-TAHAR/SABR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N-TAHAR/SABR/issues"
+  },
+  "homepage": "https://github.com/N-TAHAR/SABR#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
