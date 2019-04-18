@@ -3,11 +3,52 @@
 @font-face {
   font-family: "good time";
   src: url("/font/good time.ttf") format("truetype"),
- }
+}
+
+a{
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   background-color: #545454;
   color: #fdfdfd;
+  overflow-x: hidden;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px 0 100px;
+
+  p{
+    font-family: good time;
+    font-size: 25px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.28em;
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    font-family:good time;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.28em;
+
+    li:not(:last-child){
+      margin-right: 50px;
+    }
+  }
 }
 
 
@@ -15,7 +56,65 @@ body{
   height: 100vh;
   background: url("/img/bg.jpg") no-repeat ;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    font-family: good time;
+    font-size: 49px;
+    line-height: normal;
+    letter-spacing: 0.28em;
+    margin-left: 60px;
+  }
+
+  p{
+    font-family: Good Times;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    width: 550px;
+  }
+
+  button{
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    width: 410.7px;
+    height: 48.5px;
+    font-family: good time;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.28em;
+    color: #fdfdfd;
+    cursor: pointer;
+  }
 }
+
+.home-timer{
+  position: relative;
+  .timer{
+    position: absolute;
+    top: 50%;
+    font-family: good time;
+    font-size: 29px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.28em;
+  }
+}
+
+
+.home-info > *:not(:last-child){
+  margin-bottom: 15px;
+}
+
+
+.modele{
+  height: 100vh;
+}
+
+
 
 
 .cristal{
@@ -60,7 +159,7 @@ body{
 }
 
 .line{
-  animation: dash 3s linear forwards;
+  // animation: dash 3s linear forwards;
 }
 
 .linear{
@@ -77,8 +176,37 @@ body{
   padding-left: 65px;
 }
 
+footer{
+  background: url('/img/intersect.png') no-repeat;
+  background-size: cover;
+  height: 219px;
+  margin-top: 50px;
+  p{
+    font-family: good time;
+    font-size: 49px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.28em;
+    margin-top: 100px;
+  }
+}
+
+.sabre, .cristal-img{
+  animation: img 10s linear infinite alternate;
+}
+
 @keyframes dash{
   to{
     stroke-dashoffset: 0;
+  }
+}
+
+@keyframes img{
+  0%{
+    transform: translate(-10px,-40px);
+  }
+
+  100%{
+    transform: translate(10px, 40px);
   }
 }
