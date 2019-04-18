@@ -14,8 +14,8 @@
   <header>
     <p>SABR</p>
     <ul>
-      <li><a href="#contact">CONTACT</a></li>
       <li><a href="#qui">QUI SOMMES NOUS ?</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </header>
   <section class="home">
@@ -27,7 +27,6 @@
     </div>
     <div class="home-timer">
       <img class="sabre" src="/img/SABR3 2.1.png" alt="sabre">
-      <p class="timer"></p>
     </div>
   </section>
   <section class="modele" id="modele">
@@ -109,7 +108,7 @@
         <line class="line" x1="-3" y1="351.5" x2="1198" y2="351.5" stroke="#302E2E"/>
         <line class="line" x1="-4" y1="379.5" x2="1197" y2="379.5" stroke="#302E2E"/>
         <circle class="line" cx="313" cy="1855" r="28" stroke="#B4B4B4" stroke-width="3"/>
-        <path class="line" d="M493.497 331.5L297.829 713.425" stroke="#302F2E"/>
+        <path id="chemin" class="line" d="M493.497 331.5L297.829 713.425" stroke="#302F2E"/>
         <line class="line" y1="-0.5" x2="332.006" y2="-0.5" transform="matrix(-0.00667509 -0.999978 0.999958 -0.00914314 494.109 331.998)" stroke="#302F2E"/>
         <line class="line" x1="297.5" y1="712.997" x2="298.5" y2="993.997" stroke="#302F2E"/>
         <line class="line" x1="952.5" y1="714" x2="952.5" y2="899" stroke="#302F2E"/>
@@ -149,7 +148,15 @@
     </div>
   </section>
   <footer id="contact">
-    <p>SABR</p>
+    <ul class="contact">
+      <li>SABR</li>
+      <li>SUIVEZ NOUS !</li>
+      <ul class="social">
+        <li><a href="fb"><img src="img/fb.svg"/></a></li>
+        <li><a href="yt"><img src="img/youtube2.svg"/></a></li>
+        <li><a href="tt"><img src="img/twitter.svg"/></a></li>
+      </ul>
+    </ul>
   </footer>
 </body>
 </html>
